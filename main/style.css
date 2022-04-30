@@ -41,7 +41,7 @@ h3 {
     padding-top: 80px;
     text-align: center;
 }
-h4 {                                   
+h4, .in_addition_number {                                   
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
