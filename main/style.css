@@ -41,7 +41,7 @@ h3 {
     padding-top: 80px;
     text-align: center;
 }
-h4, .in_addition_number {                                   
+h4, .in_addition_number_card {                                   
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -341,19 +341,12 @@ h5 {
     cursor: pointer;
     padding: 10px 15px;
     margin-top: 20px;
-    display: flex; 
-}
-.in_addition_img_card {
-    justify-content: start;
-}
-.in_addition_number {                       /*   I do not know why the font "vergia" not to set((( */
-    letter-spacing: 0.03em;
-    margin-left: 15px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 15px;
+    letter-spacing: 0.14em;
+  
 } 
-/*  .in_addition_card_number {
-    text-decoration: none;
-    /* margin-left: 15px; */  
-/* }  */ 
 .in_addition_descrb {
     margin-top: 20px;
     font-family: 'Arial';
