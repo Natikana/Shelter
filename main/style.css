@@ -41,7 +41,7 @@ h3 {
     padding-top: 80px;
     text-align: center;
 }
-h4 {                                   /* I use this font for figures on the card but I see that set Arial */
+h4 {                                   
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -348,11 +348,12 @@ h5 {
 }
 .in_addition_number {                       /*   I do not know why the font "vergia" not to set((( */
     letter-spacing: 0.03em;
+    margin-left: 15px;
 } 
-.in_addition_card_number {
+/*  .in_addition_card_number {
     text-decoration: none;
-    margin-left: 15px;  
-} 
+    /* margin-left: 15px; */  
+/* }  */ 
 .in_addition_descrb {
     margin-top: 20px;
     font-family: 'Arial';
