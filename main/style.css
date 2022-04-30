@@ -58,7 +58,6 @@ h5 {
     min-height: 100%;
     flex-direction: column;
     display: flex;
-    
 }
 .btn {
     display: inline-block;
@@ -80,7 +79,7 @@ h5 {
 }
 [class*="_container"] {
     margin: 0px auto;
-    max-width: 1280px;
+    min-width: 1280px;
     padding: 0 40px; 
 }
 @media (max-width: 1280px) {        /* 85 - 99 I became to make the responsable version */
@@ -99,7 +98,7 @@ h5 {
     }
 }
 .header {
-    background: url('../assets/images/start-screen-background.jpg') no-repeat center /cover;
+    background: url('../assets/images/start-screen-background.jpg') center 0 / cover no-repeat;
 }
 .header_container { 
     display: flex;
@@ -144,7 +143,7 @@ h5 {
     color: #FFFFFF;
 }
 .not_only {
-    background: url('../assets/images/start-screen-background.jpg') no-repeat center /cover;
+    background: url('../assets/images/start-screen-background.jpg') center -180px / cover no-repeat;
     min-height: 728px;
 }
 .not_only_container {
@@ -175,7 +174,7 @@ h5 {
     border: #F1CDB3;
 }
 .not_only_img {
-    flex: 0 1 58%;
+    flex: 0 1 57.2%;
 }
 .not_only_img img {
     max-width: 100%;
@@ -221,6 +220,7 @@ h5 {
 }
 .our_friends_block {
     display: flex;
+    justify-content: center;
 }
 .our_friends_cards {
     display: flex;
