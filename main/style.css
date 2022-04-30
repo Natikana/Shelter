@@ -186,21 +186,20 @@ h5 {
     background: #FFFFFF;
 } */
 .about_container {
-    display: flex;
     min-height: 588px;
     background: #FFFFFF;
 }
 .about_part {
     display: flex;
-    padding: 80px 175px 100px 175px;
+    padding: 80px 175px 100px 175px;     /*  what do you think about use padding like this, is it correct or not */
 }
-.about_img {                                   /*  what do you think about use padding like this, is it correct or not */
+.about_img {                                   
     flex: 1 1 49.6%; 
 } 
 .about_img img {
     max-width: 100%;
 }
-.about_block {                              /*  what do you think about use padding like this, is it correct or not */
+.about_block {                              
     flex: 1 1 50.4%;
     padding: 14px 0px;    
 }
