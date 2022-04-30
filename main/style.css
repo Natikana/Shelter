@@ -103,16 +103,15 @@ h5 {
 .header_container { 
     display: flex;
     justify-content: space-between;
-    min-height: 180px;
+    min-height: 186.5px; /* 180 */
     align-items: center;
-     
 } 
 .menu {
     display: flex;
 }
 .menu_list{
     display: flex;
-    gap: 35px;
+    gap: 38px;
     list-style-type: none;
 }
 .menu_list:last-child {
@@ -126,6 +125,7 @@ h5 {
     line-height: 160%;
     color: #CDCDCD;
     text-decoration: none;
+    letter-spacing: -0.010em;/*  changes 0.06 */
 }
 .menu_link:hover {
     color: #FAFAFA;
@@ -142,6 +142,7 @@ h5 {
     font-weight: 400;
     font-size: 13px;
     color: #FFFFFF;
+    letter-spacing: 0.075em;
 }
  .not_only {
     background: url('../assets/images/start-screen-background.jpg') center -180px / cover no-repeat;
@@ -159,6 +160,8 @@ h5 {
     font-size: 44px;
     color: #FFFFFF;
     transition: color 0.5s;
+    letter-spacing: 0.015px; /* 0.06 */
+    line-height: 125%;
 }
 .not_only_descrb {
     font-family: 'Arial';
@@ -167,13 +170,14 @@ h5 {
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.003em;
 }
 .not_only_btn {
-    margin-top: 42px;
+    margin-top: 46px;/*  42 */
     background-color: #F1CDB3;
     width: 207px;
     border: #F1CDB3;
+    letter-spacing: 0.06em;
 }
 .not_only_img {
     flex: 1 1 58%;
@@ -214,7 +218,7 @@ h5 {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 160%;
+    line-height: 158%; /* 160 */
     color: #4C4C4C;
     letter-spacing: -0.00em;
 }
@@ -228,6 +232,7 @@ h5 {
 .our_friends_title {
     margin-top: 0;
     margin-bottom: 60px;
+    letter-spacing: 0.09em; /* change */
 }
 .our_friends_block {
     display: flex;
@@ -236,18 +241,19 @@ h5 {
 .our_friends_cards {
     display: flex;
     align-items: center;
+    margin-bottom: 58px;  /* 0 */
 }
 .our_friends_img_arrow_left {
-    margin-right: 7px;
+    margin-right: 6px; /* 7 */
 }
 .our_friends_col {
     flex: 0 1 22.5%;
-    padding: 0 45px 60px 45px;
+    padding: 0 46px 33px 45px; /* 0 45px 60px 45px */
     align-items: center;
     cursor: pointer;
 }
 .our_friends_img_name {
-    margin-top: 30px;
+    margin-top: 26px; /* 30 */
     text-align: center;
     font-size: 20px;
     color: #545454;
@@ -287,7 +293,7 @@ h5 {
 } 
 .help_row1, .help_row2 {
     display: flex;
-    gap: 120px; 
+    gap: 61px; /*  120 */
     list-style-type: none;
     text-align: center;
     align-items: center;
@@ -295,6 +301,7 @@ h5 {
 }
 .help_row2 {
     padding: 55px 60px 0 60px;
+    gap: 27px; /* 61 */
 }
 .help_food {
     flex: 1 1 6.83%;
@@ -327,7 +334,7 @@ h5 {
     flex: 1 1 13%;
 }
 .help_img_descrb {
-    margin-top: 30px;
+    margin-top: 27px; /* 30 */
 }
 .in_addition {
     background: #F6F6F6;
@@ -340,11 +347,11 @@ h5 {
     display: flex;
 }
 .in_addition_img {
-    flex: 1 1 57.3%;
+    flex: 1 1 56.3%;/*  57.3 */
     padding: 91px 30px 110px 143px;
 }
 .in_addition_card {
-    flex: 1 1 42.7%;
+    flex: 1 1 43.7%; /* 42.7 */
     padding-right: 144px;
 }
 .in_addition_title {
@@ -365,7 +372,7 @@ h5 {
     display: flex;
     justify-content:flex-start;
     gap: 15px;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.15em; /* 0.14 */
   
 } 
 .in_addition_descrb {
@@ -391,7 +398,7 @@ h5 {
 }
 .footer_column1 {
     flex: 1 1 24.2%;
-    margin-right: 160px;
+    margin-right: 143px; /* 160px */
 }
 .footer_title {
     text-align: start;
