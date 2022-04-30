@@ -4,11 +4,11 @@
     font-style: normal;
     font-weight: normal;
 }            
-/*  *{                                    
+*{                                    
     box-sizing: border-box;                    
     margin: 0;
     padding: 0;
-}  */
+}  
 html, body {
     height: 100%;
     scroll-behavior: smooth;
