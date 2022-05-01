@@ -51,7 +51,7 @@ h4, .in_addition_number_card {
 } 
 h5 {
     font-size: 15px;
-    line-height: 110%;;
+    line-height: 110%;
     letter-spacing: 0.06em;
     color: #545454;
 }
@@ -67,7 +67,7 @@ h5 {
     font-weight: 400; 
     display: inline-block;
     align-items: center;
-    padding: 15px 45px;
+    padding: 15px 40px;
     height: 52px;
     border-radius: 100px;
     font-size: 17px;
@@ -108,7 +108,7 @@ h5 {
 .header_container { 
     display: flex;
     justify-content: space-between;
-    min-height: 178.5px; 
+    min-height: 187.5px; 
     align-items: center;
 } 
 .menu {
@@ -160,12 +160,13 @@ h5 {
     flex: 1 1 41.5%;
 }
 .not_only_title {
-    padding: 167px 0 42px 0;
+    padding: 160px 0 41px 0;
     font-size: 44px;
     color: #FFFFFF;
     transition: color 0.5s;
     letter-spacing: 0.015px;
-    font-weight: 400; 
+    font-weight: 400;
+    line-height: 129%; 
 }
 .not_only_descrb {
     font-family: 'Arial';
@@ -198,7 +199,7 @@ h5 {
 }
 .about_part {
     display: flex;
-    padding: 80px 175px 100px 175px;
+    padding: 80px 175px 92px 175px;
 }         
 .about_img {                                   
     flex: 1 1 49.6%; 
@@ -226,7 +227,7 @@ h5 {
     letter-spacing: -0.00em;
 }
 .about_descrb2 {
-    margin-top: 24px;
+    margin-top: 26px;
 }
 .our_friends {
     background: #F6F6F6;
@@ -268,7 +269,8 @@ h5 {
     margin-top: 30px;
     font-family: 'Georgia';
     font-style: normal;
-    font-weight: 400; 
+    font-weight: 400;
+    letter-spacing: 0.045em; 
 }
 .cards_arrow_btn {
     border: 2px solid #F1CDB3;
@@ -364,7 +366,7 @@ h5 {
 }
 .in_addition_img {
     flex: 1 1 56.3%;
-    padding: 91px 30px 110px 143px;
+    padding: 91px 30px 107px 143px;
 }
 .in_addition_card {
     flex: 1 1 43.7%; 
@@ -381,6 +383,7 @@ h5 {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
+    font-size: 20px;
     width: 349px;
     height: 43px;
     background: #F1CDB3;
@@ -391,7 +394,6 @@ h5 {
     display: flex;
     justify-content:flex-start;
     gap: 15px;
-    letter-spacing: 0.14em;
     text-decoration: none;
     color: #545454; 
 } 
