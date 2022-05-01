@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Georgia';                     /*  I think this font more fat than original */
+    font-family: 'Georgia';                     
     src: url('../assets/fonts/911Fonts.com_GeorgiaRegular__-_911fonts.com_fonts_rbS7.ttf');
     font-style: normal;
     font-weight: normal;
@@ -25,9 +25,10 @@ h1 {
     letter-spacing: 0.06em;
     color: #F1CDB3;
     line-height: 110%;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
     cursor: pointer;
     transition: color 0.5s;
+    font-weight: 400;
 }
 h1:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
@@ -40,6 +41,7 @@ h3 {
     color: #545454;
     padding-top: 80px;
     text-align: center;
+    font-weight: 400;
 }
 h4, .in_addition_number_card {                                   
     font-size: 20px;
@@ -60,6 +62,9 @@ h5 {
     display: flex;
 }
 .btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400; 
     display: inline-block;
     align-items: center;
     padding: 15px 45px;
@@ -103,7 +108,7 @@ h5 {
 .header_container { 
     display: flex;
     justify-content: space-between;
-    min-height: 186.5px; /* 180 */
+    min-height: 178.5px; 
     align-items: center;
 } 
 .menu {
@@ -125,7 +130,7 @@ h5 {
     line-height: 160%;
     color: #CDCDCD;
     text-decoration: none;
-    letter-spacing: -0.010em;/*  changes 0.06 */
+    letter-spacing: -0.010em;
 }
 .menu_link:hover {
     color: #FAFAFA;
@@ -142,26 +147,25 @@ h5 {
     font-weight: 400;
     font-size: 13px;
     color: #FFFFFF;
-    letter-spacing: 0.075em;
+    letter-spacing: 0.11em;
 }
  .not_only {
     background: url('../assets/images/start-screen-background.jpg') center -180px / cover no-repeat;
 } 
 .not_only_container {
     display: flex;
-    /* background: url('../assets/images/start-screen-background.jpg') center -180px / cover no-repeat; */
     min-height: 728px;
 }
 .not_only_block {
-    flex: 1 1 42%;
+    flex: 1 1 41.5%;
 }
 .not_only_title {
-    padding: 163px 0 42px 0;
+    padding: 167px 0 42px 0;
     font-size: 44px;
     color: #FFFFFF;
     transition: color 0.5s;
-    letter-spacing: 0.015px; /* 0.06 */
-    line-height: 125%;
+    letter-spacing: 0.015px;
+    font-weight: 400; 
 }
 .not_only_descrb {
     font-family: 'Arial';
@@ -173,30 +177,29 @@ h5 {
     letter-spacing: 0.003em;
 }
 .not_only_btn {
-    margin-top: 46px;/*  42 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400; 
+    margin-top: 44px;
     background-color: #F1CDB3;
     width: 207px;
     border: #F1CDB3;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
 }
 .not_only_img {
-    flex: 1 1 58%;
+    flex: 0 1 58.5%;
 }
 .not_only_img img {
     max-width: 100%;
 }
-/* .about {
-    min-height: 588px;
-    background: #FFFFFF;
-} */
 .about_container {
     min-height: 588px;
     background: #FFFFFF;
 }
 .about_part {
     display: flex;
-    padding: 80px 175px 100px 175px;     /*  what do you think about use padding like this, is it correct or not */
-}
+    padding: 80px 175px 100px 175px;
+}         
 .about_img {                                   
     flex: 1 1 49.6%; 
 } 
@@ -213,26 +216,28 @@ h5 {
     margin:0;
 }
 .about_descrb1, .about_descrb2 {
-    margin-top: 25px;
+    margin-top: 22px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 158%; /* 160 */
+    line-height: 158%; 
     color: #4C4C4C;
     letter-spacing: -0.00em;
+}
+.about_descrb2 {
+    margin-top: 24px;
 }
 .our_friends {
     background: #F6F6F6;
 }
 .our_friends_container {
     min-height: 877px;
-   /*  background: #F6F6F6; */
 }
 .our_friends_title {
     margin-top: 0;
     margin-bottom: 60px;
-    letter-spacing: 0.09em; /* change */
+    letter-spacing: 0.06em; 
 }
 .our_friends_block {
     display: flex;
@@ -241,19 +246,19 @@ h5 {
 .our_friends_cards {
     display: flex;
     align-items: center;
-    margin-bottom: 58px;  /* 0 */
+    margin-bottom: 58px;  
 }
-.our_friends_img_arrow_left {
-    margin-right: 6px; /* 7 */
+.our_friends_link {
+    text-decoration: none;
 }
 .our_friends_col {
     flex: 0 1 22.5%;
-    padding: 0 46px 33px 45px; /* 0 45px 60px 45px */
+    padding: 0 46px 33px 45px; 
     align-items: center;
     cursor: pointer;
 }
 .our_friends_img_name {
-    margin-top: 26px; /* 30 */
+    margin-top: 26px; 
     text-align: center;
     font-size: 20px;
     color: #545454;
@@ -261,14 +266,27 @@ h5 {
 }
 .our_friends_img_btn {
     margin-top: 30px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400; 
 }
-.our_friends_img_arrow_rigth {
-    margin-left: 7px;
-}
-.our_friends_img_arrow_rigth:hover, .our_friends_img_arrow_left:hover {
-    background: #FDDCC4;
+.cards_arrow_btn {
+    border: 2px solid #F1CDB3;
+    border-radius: 100%;
+    background:none;
     cursor: pointer;
-    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    padding-bottom: 4px;
+}
+.arrow_left {
+    margin-right: 6px;    
+}
+.arrow_rigth {
+    margin-left: 6px;    
+}
+.cards_arrow_btn:hover {
+    background: #FDDCC4; 
 }
 .our_friends_button {
     display: flex;	
@@ -283,17 +301,16 @@ h5 {
 }
 .help_container {                                      
     min-height: 611px;
-    /* background: #FFFFFF; */
 }
 .help_wrapper {
-    padding: 60px 60px 100px 60px;      /*  I think it is a crazy idea)))) to make this block like me))) */
+    padding: 60px 60px 100px 60px;     
 }
 .help_title {
     margin-top: 0;
 } 
 .help_row1, .help_row2 {
     display: flex;
-    gap: 61px; /*  120 */
+    gap: 66px;
     list-style-type: none;
     text-align: center;
     align-items: center;
@@ -301,7 +318,7 @@ h5 {
 }
 .help_row2 {
     padding: 55px 60px 0 60px;
-    gap: 27px; /* 61 */
+    gap: 27px;
 }
 .help_food {
     flex: 1 1 6.83%;
@@ -334,24 +351,23 @@ h5 {
     flex: 1 1 13%;
 }
 .help_img_descrb {
-    margin-top: 27px; /* 30 */
+    margin-top: 27px; 
 }
 .in_addition {
     background: #F6F6F6;
 }
 .in_addition_container {
     min-height: 462px;
-    /* background: #F6F6F6; */
 }
 .in_addition_block {
     display: flex;
 }
 .in_addition_img {
-    flex: 1 1 56.3%;/*  57.3 */
+    flex: 1 1 56.3%;
     padding: 91px 30px 110px 143px;
 }
 .in_addition_card {
-    flex: 1 1 43.7%; /* 42.7 */
+    flex: 1 1 43.7%; 
     padding-right: 144px;
 }
 .in_addition_title {
@@ -362,6 +378,9 @@ h5 {
     margin-top: 20px;
 }
 .in_addition_btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
     width: 349px;
     height: 43px;
     background: #F1CDB3;
@@ -372,8 +391,9 @@ h5 {
     display: flex;
     justify-content:flex-start;
     gap: 15px;
-    letter-spacing: 0.15em; /* 0.14 */
-  
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    color: #545454; 
 } 
 .in_addition_descrb {
     margin-top: 20px;
@@ -390,7 +410,6 @@ h5 {
 }
 .footer_container {
     min-height: 350px;
-    /* background: url('../assets/images/footer-background.jpg') no-repeat center / cover; */
 }
 .footer_wrapper {
     display: flex;
@@ -398,7 +417,7 @@ h5 {
 }
 .footer_column1 {
     flex: 1 1 24.2%;
-    margin-right: 143px; /* 160px */
+    margin-right: 143px; 
 }
 .footer_title {
     text-align: start;
