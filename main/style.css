@@ -132,6 +132,11 @@ h5 {
     text-decoration: none;
     letter-spacing: -0.010em;
 }
+.about {
+    border-bottom: 3px solid #F1CDB3;
+    display: inline-block;
+    line-height: 0.85;
+}
 .menu_link:hover {
     color: #FAFAFA;
     cursor: pointer;
