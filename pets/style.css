@@ -189,12 +189,14 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 0 430px;
+    
 }
 .our_pets_switch {
     width: 52px;
     height: 52px;
     border-radius: 50%;
     border:  2px solid #CDCDCD;
+    cursor: pointer;
 }
 .our_arrow_speed_num {
     background:#F1CDB3;
