@@ -160,15 +160,20 @@ h4 {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background: #FFFFFF;
+    background: #FAFAFA;
     border-radius: 9px;
+    cursor: pointer;
 }
 .our_pets_img img{
     max-width: 100%;
-} 
-.our_pets_card:hover {
-    border: solid 2px #F1CDB3;
 }
+.our_pets_card:hover {
+    background: #FFFFFF;
+}
+.our_pets_card:hover .btn {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+} 
 .our_pets_col {
     text-decoration: none;
 }

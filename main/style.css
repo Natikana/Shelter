@@ -263,6 +263,10 @@ h5 {
     align-items: center;
     cursor: pointer;
 }
+.our_friends_col:hover {
+    border: solid 2px #F1CDB3;
+    border-radius: 3px;
+}
 .our_friends_img_name {
     margin-top: 26px; 
     text-align: center;
