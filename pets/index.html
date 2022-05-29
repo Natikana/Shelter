@@ -12,20 +12,30 @@
     <div class="wrapper">
         <header class="pets_header">
             <div class="pets_container container">
-                <div class="pets_block">
-                    <div class="pets_logo">
-                        <a href="https://natikana.github.io/Shelter/main/" class="pets_title_link"><h1 class="logo_title">Cozy House</h1></a>
-                        <div class="logo_subtitle">Shelter for pets in Boston</div>
+                <nav class="navBar">
+                    <div class="pets_block">
+                        <div class="pets_logo">
+                            <a href="https://natikana.github.io/Shelter/main/" class="pets_title_link"><h1 class="logo_title">Cozy House</h1></a>
+                            <div class="logo_subtitle">Shelter for pets in Boston</div>
+                        </div>
+                        <div class="menu ">
+                            <ul class="menu_list">
+                                <li class="menu_item"><a href="https://natikana.github.io/Shelter/main/" class="menu_link">About the shelter</a></li>
+                                <li class="menu_item"><a href="#our_pets" class="menu_link our_pets_link">Our pets</a></li>
+                                <li class="menu_item"><a href="https://natikana.github.io/Shelter/main/#Help" class="menu_link">Help the shelter</a></li>
+                                <li class="menu_item"><a href="#contacts" class="menu_link">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="burger" id="burger">
+                            <div class="burger_field">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>    
+                        </div>
                     </div>
-                    <nav class="menu">
-                        <ul class="menu_list">
-                            <li class="menu_item"><a href="https://natikana.github.io/Shelter/main/" class="menu_link">About the shelter</a></li>
-                            <li class="menu_item"><a href="#our_pets" class="menu_link our_pets_link">Our pets</a></li>
-                            <li class="menu_item"><a href="https://natikana.github.io/Shelter/main/#Help" class="menu_link">Help the shelter</a></li>
-                            <li class="menu_item"><a href="#contacts" class="menu_link">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                </nav> 
+                <div class="popup" id="popup"></div>   
             </div>
         </header>
         <main class="our_pets_main">
@@ -67,7 +77,7 @@
                                     <button class="our_pets_btn btn">Learn more</button>
                                 </div>
                             </div> 
-                            <div class="our_pets_row">
+                            <div class="our_pets_row hidden320">
                                 <div class="our_pets_card hidden320">
                                     <a href="#" class="our_pets_col">
                                         <img src="../assets/images/pets-timmy.png" alt="Timmy" class="our_pets_img">
@@ -75,8 +85,8 @@
                                     </a>
                                     <button class="our_pets_btn btn">Learn more</button>
                                 </div>
-                                <div class="our_pets_card">
-                                    <a href="#" class="our_pets_col hidden320">
+                                <div class="our_pets_card hidden320">
+                                    <a href="#" class="our_pets_col ">
                                         <img src="../assets/images/pets-charly.jpg" alt="Charly" class="our_pets_img">
                                         <div class="our_pets_name">Charly</div>
                                     </a>
@@ -123,7 +133,7 @@
             <div class="pets_container">
                 <div class="footer_wrapper">
                     <div class="footer_col1 col_mail">
-                        <h3 class="footer_title">For questions <br> and suggestions</h3>
+                        <h3 class="footer_title">For questions  and suggestions</h3>
                         <div class="footer_mail">
                             <img src="../assets/icons/mail(1).png" alt="footer_mail_img" class="footer_mail_img">
                             <a href="mailto:email@shelter.com" class="footer_link">email@shelter.com</a>
@@ -134,7 +144,7 @@
                         </div>
                     </div>
                     <div class="footer_col2 col_map">
-                        <h3 class="footer_title">We are waiting <br> for your visit</h3>
+                        <h3 class="footer_title title_map">We are waiting  for your visit</h3>
                         <div class="footer_map">
                             <img src="../assets/icons/pin.png" alt="footer_map_img" class="footer_map_img">
                             <h4 class="footer_map_title">
@@ -157,5 +167,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
