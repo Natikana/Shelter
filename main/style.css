@@ -56,7 +56,7 @@ h5 {
     color: #545454;
 }
 .wrapper {
-    overflow: hidden;
+    overflow-y: hidden;
     min-height: 100%;
     flex-direction: column;
     display: flex;
@@ -140,7 +140,7 @@ h5 {
 }
 .menu_list{
     display: flex;
-    gap: 38px;
+    gap: 39px;
     list-style-type: none;
 }
 .menu_list:last-child {
@@ -159,7 +159,7 @@ h5 {
 .about_link {
     border-bottom: 3px solid #F1CDB3;
     display: inline-block;
-    line-height: 0.85;
+    line-height: 1.85;
 }
 .menu_link:hover {
     color: #FAFAFA;
@@ -176,7 +176,8 @@ h5 {
     font-weight: 400;
     font-size: 13px;
     color: #FFFFFF;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.12em;
+    /* line-height: 160%; */
 }
  .not_only {
     background: url('../assets/images/start-screen-background.jpg') center -180px / cover no-repeat;
@@ -535,7 +536,7 @@ h5 {
     padding: 40px 0 0 0;
     max-width: 100%;
 }
-@media (max-width: 1280px) {        
+/* @media (max-width: 1280px) {        
     [class*="_container"] {
         max-width: 1280px;
     }
@@ -559,7 +560,7 @@ h5 {
     }
     .not_only_title {
         padding: 70px 0 30px 0;
-        font-size: 35px; 
+         
     }
     .not_only_descrb {
         font-size: 14px;
@@ -632,7 +633,7 @@ h5 {
         flex: 0 0 29.2%;
         margin-right: 0px;
     }
-}
+} */
 /* @media (max-width: 1087px) { 
     [class*="_container"] {
         max-width: 1087px;
@@ -918,11 +919,17 @@ h5 {
     .not_only_descrb {
         font-size: 14px;
         margin-bottom: 42px;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.031em;
+        line-height: 174%;
+    }
+    .not_only_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .not_only_btn {
-        margin: 0 0 0 115px;
-    }
+        margin: 0;
+    } 
     .not_only_img {
         display: flex;
         justify-content: flex-end; 
@@ -937,7 +944,13 @@ h5 {
         display: flex;
         flex-direction: column-reverse;
         padding: 80px 139px 100px 139px;
-    }         
+    } 
+    .about_block {
+        padding: 0px; 
+    }
+    h3 {
+        letter-spacing: 0.060em;
+    }        
     .about_img {                                   
         display: flex;
         justify-content: center;
@@ -945,6 +958,8 @@ h5 {
     } 
     .about_descrb1, .about_descrb2 {
         margin-top: 25px;
+        letter-spacing: 0.035em;
+        line-height: 170%;
     }
     .our_friends_container {
         min-height: 877px;
@@ -963,9 +978,14 @@ h5 {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 60px;
+    }
+    .our_friends_row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
     }  
     .our_friends_img_name {
-        margin-top: 30px;
+        margin-top: 24px
     }    
     .our_friends_img_btn {
         margin: 30px 0;
@@ -976,12 +996,18 @@ h5 {
     .arrow_rigth {
         margin-left: 12px;
     }
+    .our_friends_btn {
+        letter-spacing: 0.06em;
+    }
     .help_container {                                      
         min-height: 779px;
     }
     .help_wrapper {
-        padding: 60px 39px 100px 39px;     
+        padding: 60px 66px 92px 49px;     
     }
+    .help_row {
+        gap: 63px;
+    }    
     .in_addition_container {
         min-height: 783px;
     }
@@ -989,6 +1015,13 @@ h5 {
         display: flex;
         flex-direction: column-reverse;
     }
+    .in_addition_btn {
+        letter-spacing: 0.058em;
+        padding: 10px 13px;
+    }
+    .in_addition_descrb {
+        letter-spacing: 0em;
+    }    
     .in_addition_img {
         display: flex;
         justify-content: center;
@@ -1006,22 +1039,29 @@ h5 {
         flex-wrap: wrap;
         justify-content: center;
         gap: 61px;
-        padding: 0 34px;
+        padding: 0 33px;
     }
     .footer_column1 {
         flex: 0 0 43.5%;
         margin-right: 0px;  
     }
+    .footer_title {
+        letter-spacing: 0.058em;
+    }    
     .footer_column2 {
-        flex: 0 0 46%;
+        flex: 0 0 47%;
         margin-right: 0; 
     }
     .footer_title {
         padding: 30px 0 0 0;
     }
     .footer_link {
-        letter-spacing: -0.0000em;
+        letter-spacing: 0.068em;
+        line-height: 109%;
     }
+    .footer_mail, .footer_tel {
+        margin-top: 42px;
+    }    
     .footer_image {
         padding: 0;
     }
@@ -1059,7 +1099,7 @@ h5 {
         width: 30px;
         height: 2px;
         background-color: #F1CDB3;
-        margin: 10px auto; 
+        margin: 9px auto; 
         transition: 2s;
     }
     .hamb.active .line {
@@ -1075,9 +1115,8 @@ h5 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-right: 30px;
-        
-    } 
+        margin-right: 46px;
+    }
     .logo_list {
        margin-left: 45.5px;
     } 
@@ -1115,6 +1154,7 @@ h5 {
     .menu_list > li > a {
         font-size: 32px;
         line-height: 160%;
+        letter-spacing: 0.0em;
     }
     /* .logo_list {
         margin-left: 0;
@@ -1309,16 +1349,18 @@ h5 {
     .not_only_title {
         font-size: 25px;
         text-align: center;
+        letter-spacing: 0.055em;
     }
     .not_only_descrb {
         text-align: center;
-        letter-spacing: 0.025em;
+        line-height: 173%;
+        letter-spacing: 0.03em;
     }
     .not_only_btn {
         margin: 0; 
     }
     .not_only_img img {
-        max-width: 89.31%;
+        max-width: 86.31%
     }
     h3 {
         font-size: 25px;
@@ -1331,18 +1373,26 @@ h5 {
     .about_part {
         display: flex;
         flex-direction: column-reverse;
-        padding: 42px 25px 42.2px 25px;
+        padding: 42px 15px 42.2px 15px
+    }
+    .about_block {
+        padding: 0px; 
     }
     .about_title {
-        text-align: center;   
+        text-align: center; 
+        letter-spacing: 0.060em;  
     }      
     .about_img {                                   
-        margin-top: 28px; 
+        margin-top: 40px; 
     } 
+    .about_img img {
+        max-width: 97%;
+    }
     .about_descrb1, .about_descrb2 {
         margin-top: 25px;
         text-align: justify;
-        letter-spacing: -0.025em;
+        letter-spacing: 0.03em;
+        line-height: 171%;
     }
     .about_descrb2 {
         margin-top: 22px;
@@ -1367,6 +1417,9 @@ h5 {
     .our_friends_col{
         order: 1;
     }
+    .our_friends_img_name {
+        margin-top: 25px;
+    }
     .arrow_left {
         order: 2;
     } 
@@ -1374,13 +1427,14 @@ h5 {
         order: 3;
     }      
     .arrow_left {
-        margin: 20px 0px 42px 45px;
+        margin:  20px 0px 42px 43px;
     }
     .arrow_rigth {
-        margin: 20px 45px 42px 0;
+        margin: 20px 43px 42px 0;
     }
     .our_friends_btn {
         width: 260px;
+        letter-spacing: 0.06em;
     }
     .help_container {
         min-height: 745px;
@@ -1389,14 +1443,14 @@ h5 {
         padding: 42px 5px 42px 5px;
     }
     .help_row {
-        gap: 36px;
+        gap: 18px;
         justify-content: space-between; 
     }
     h4 {
         font-size: 15px;
     }
     .help_img1 {
-        max-width: 80%;
+        max-width: 85%;
     }
     .help_img_descrb {
         margin-top: 20px;
@@ -1416,22 +1470,26 @@ h5 {
         text-align: center;
         font-weight: 400;
         letter-spacing: 0;
+        margin-top: 23px;
     }
     .in_addition_descrb {
         text-align: justify;
-        letter-spacing: 0.035em;
+        letter-spacing: 0.012em;
+        line-height: 153%;
     }     
     .in_addition_btn {
         width: 281px;
         height: 43px;
         font-size: 15px;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.06em;
+        margin-top: 22px;
+        padding: 10px 12px;
     } 
     .in_addition_img {
-        padding: 42px 0px;
+        padding: 41px 0px 0px 0;
     } 
     .in_addition_image {
-        max-width: 100%;
+        max-width: 92%;
     }
     .footer_container {
         min-height: 809px;
@@ -1456,11 +1514,16 @@ h5 {
     .footer_link {
         letter-spacing: 0.05em;
     }
+    .footer_link {
+        line-height: 119%;
+        margin-left: 18px;
+        letter-spacing: 0.054em;
+    }
     .footer_map1, .footer_map2 {
         margin-top: 40px;
     }
     .footer_image {
-        max-width: 86%;
+         max-width: 87%;
     }
     .footer_column3 {  
         display: flex;
