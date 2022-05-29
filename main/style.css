@@ -1045,7 +1045,6 @@ h5 {
     .hamb {
         display: flex;
         align-items: center;
-        cursor: pointer;
         z-index: 1000;   
     }
     .hamb_field {
