@@ -12,18 +12,30 @@
         <div class="wrapper">
             <header class="header">
                 <div class="header_container">
-                    <div class="logo_list">
-                        <a><h1 class="logo_title">Cozy House</h1></a>
-                        <div class="logo_subtitle">Shelter for pets in Boston</div>
-                    </div>      
-                    <nav class="header_menu menu">
-                        <ul class="menu_list">
-                            <li class="menu_item"><a href="#About" class="menu_link about_link">About the shelter</a></li>
-                            <li class="menu_item"><a href=" https://natikana.github.io/Shelter/pets/" class="menu_link our_pets">Our pets</a></li>
-                            <li class="menu_item"><a href="#Help" class="menu_link">Help the shelter</a></li>
-                            <li class="menu_item"><a href="#Contacts" class="menu_link">Contacts</a></li>
-                        </ul>
-                    </nav>
+                    <nav class="navbar ">
+                        <div class="navbar_wrap">
+                            <div class="logo_list">
+                                <a><h1 class="logo_title">Cozy House</h1></a>
+                                <div class="logo_subtitle">Shelter for pets in Boston</div>
+                            </div>      
+                            <div class="header_menu menu">
+                                <ul class="menu_list">
+                                    <li class="menu_item"><a href="#About" class="menu_link about_link">About the shelter</a></li>
+                                    <li class="menu_item"><a href=" https://natikana.github.io/Shelter/pets/" class="menu_link our_pets">Our pets</a></li>
+                                    <li class="menu_item"><a href="#Help" class="menu_link">Help the shelter</a></li>
+                                    <li class="menu_item"><a href="#Contacts" class="menu_link">Contacts</a></li>
+                                </ul>
+                            </div>
+                            <div class="hamb" id="hamb">
+                                <div class="hamb_field">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                        </div>    
+                    </nav> 
+                    <div class="popup" id="popup"></div>   
                 </div>
             </header>
             <main class="main">
@@ -32,13 +44,15 @@
                         <div class="not_only_block">
                             <h2 class="title not_only_title">Not only people <br> need a house</h2>
                             <div class="not_only_descrb">
-                                We offer to give a chance to a little and nice puppy with an extremely <br> wide and open heart. He or she will love you more than anybody else <br> in the world, you will see!
+                                We offer to give a chance to a little and  nice puppy with an extremely  wide and open heart. He or she will love you more than anybody else in the world, you will see!
                             </div>
-                            <a href="#Our_pets"><button class="btn not_only_btn">Make a friend</button></a>
+                            <a href="#Our_pets">
+                                <button class="btn not_only_btn">Make a friend</button>
+                            </a>
                         </div>
-                    <div class="not_only_img">
-                        <img src="../assets/images/start-screen-puppy.png" alt="not_only_puppy">
-                    </div>
+                        <div class="not_only_img">
+                            <img src="../assets/images/start-screen-puppy.png" alt="not_only_puppy">
+                        </div>
                     </div>   
                 </section>
                 <section class="about" id="About">   
@@ -50,17 +64,17 @@
                             <div class="about_block">
                                 <h3 class="about_title">About the shelter <br> “Cozy House”</h3>
                                 <div class="about_descrb1">
-                                    Currently we have 121 dogs and 342 cats on our hands and <br> 
-                                    statistics show that only 20% of them will find a family. The <br> 
-                                    others will continue to live with us and will be waiting for a lucky <br>
+                                    Currently we have 121 dogs and 342 cats on our hands and  
+                                    statistics show that only 20% of them will find a family. The  
+                                    others will continue to live with us and will be waiting for a lucky 
                                     chance to become dearly loved.
                                 </div>
                                 <div class="about_descrb2">
-                                    We feed our wards with the best food and make sure that they <br> 
-                                    do not get sick, feel comfortable (including psychologically) and <br> 
-                                    well. We are supported by 87 volunteers and 28 employees of <br> 
-                                    various skill levels. About 12% of the animals are taken by the <br>
-                                    shelter staff. Taking care of the animals, they become attached <br> 
+                                    We feed our wards with the best food and make sure that they 
+                                    do not get sick, feel comfortable (including psychologically) and  
+                                    well. We are supported by 87 volunteers and 28 employees of  
+                                    various skill levels. About 12% of the animals are taken by the 
+                                    shelter staff. Taking care of the animals, they become attached  
                                     to the pets and would hardly ever leave them alone.
                                 </div>
                             </div> 
@@ -86,7 +100,7 @@
                                             <button class="btn our_friends_img_btn">Learn more</button>
                                         </div>
                                     </div>                                        
-                                    <div class="our_friends_col">
+                                    <div class="our_friends_col cat_hidden">
                                         <a href="#" class="our_friends_link">
                                             <img src="../assets/images/pets-jennifer.png" alt="pet" class="our_friends_img">
                                             <div class="our_friends_img_name">Jennifer</div>
@@ -95,9 +109,9 @@
                                             <button class="btn our_friends_img_btn">Learn more</button>
                                         </div>
                                     </div>        
-                                    <div class="our_friends_col">
+                                    <div class="our_friends_col dog_hidden">
                                         <a href="#" class="our_friends_link">
-                                            <img src="../assets/images/pets-woody.png" alt="dog" class="our_friends_img">
+                                            <img src="../assets/images/pets-woody.png" alt="dog" class="our_friends_img ">
                                             <div class="our_friends_img_name">Woody</div>
                                         </a>    
                                         <div class="our_friends_button">
@@ -121,46 +135,44 @@
                         </h3>
                         <div class="help_list">
                             <div class="help_wrapper">
-                                <ul class="help_row1">
-                                    <li class="help_food">
+                                <div class="help_row">
+                                    <div class="help_food">
                                         <img src="../assets/icons/icon-pet-food.svg" alt="food" class="help_img1 food">
                                         <h4 class="help_img_descrb food_descrb">Pet food</h4> 
-                                    </li>     
-                                    <li class="help_transportation">
+                                    </div>     
+                                    <div class="help_transportation">
                                         <img src="../assets/icons/icon-transportation.svg" alt="Transportation" class="help_img1 transportation">
                                         <h4 class="help_img_descrb transportation_descrb">Transportation</h4>
-                                    </li>
-                                    <li class="help_toys">
+                                    </div>
+                                    <div class="help_toys">
                                         <img src="../assets/icons/icon-toys.svg" alt="Toys" class="help_img1 Toys">
                                         <h4 class="help_img_descrb toys_descrb">Toys</h4>
-                                    </li>
-                                    <li class="help_bowls">
+                                    </div>
+                                    <div class="help_bowls">
                                         <img src="../assets/icons/icon-bowls-and-cups.svg" alt="Bowls and cups" class="help_img1 Bowls">
                                         <h4 class="help_img_descrb bowls_descrb">Bowls and cups</h4>
-                                    </li>
-                                    <li class="help_shampoos">
+                                    </div>
+                                    <div class="help_shampoos">
                                         <img src="../assets/icons/icon-shampoos.svg" alt="Shampoos" class="help_img1 Shampoos">
                                         <h4 class="help_img_descrb shampoos_descrb">Shampoos</h4>
-                                    </li>
-                                </ul>
-                                <ul class="help_row2">
-                                    <li class="help_vitamins">
+                                    </div>
+                                    <div class="help_vitamins">
                                         <img src="../assets/icons/icon-vitamins.svg" alt="Vitamins" class="help_img">
                                         <h4 class="help_img_descrb">Vitamins</h4>
-                                    </li>
-                                    <li class="help_medicines">
+                                    </div>
+                                    <div class="help_medicines">
                                         <img src="../assets/icons/icon-medicines.svg" alt="Medicines" class="help_img">
                                         <h4 class="help_img_descrb">Medicines</h4>
-                                    </li>
-                                    <li class="help_collars">
+                                    </div>
+                                    <div class="help_collars">
                                         <img src="../assets/icons/collars-or-leashes.png" alt="Collars / leashes" class="help_img">
                                         <h4 class="help_img_descrb">Collars / leashes</h4>
-                                    </li>
-                                    <li class="help_sleeping">
+                                    </div>
+                                    <div class="help_sleeping">
                                         <img src="../assets/icons/icon-sleeping-area.svg" alt="Sleeping areas" class="help_img">
                                         <h4 class="help_img_descrb">Sleeping areas</h4>
-                                    </li>
-                                </ul> 
+                                    </div>
+                                </div> 
                             </div>
                         </div>   
                     </div>    
@@ -182,10 +194,10 @@
                                     <img src="../assets/icons/credit-card.png" alt="img_card" class="in_addition_img_card">
                                     8380 2880 8028 8791 7435</a>
                                 <div class="in_addition_descrb">
-                                    Legal information and lorem ipsum dolor sit amet, consectetur <br>
-                                    adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac <br>
-                                    diam. Praesent ultrices maximus tortor et vulputate. Interdum et <br> 
-                                    malesuada fames ac ante ipsum primis in faucibus.
+                                    Legal information and lorem ipsum dolor sit amet, consectetur 
+                                    adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus  
+                                    tortor et vulputate. Interdum et malesuada fames
+                                    ac ante ipsum primis in faucibus.
                                 </div>
                             </div>    
                         </div>
@@ -207,14 +219,14 @@
                             </div>                   
                         </div>
                         <div class="footer_column2">
-                            <h3 class="footer_title">We are waiting for your visit</h3>
+                            <h3 class="footer_title">We are waiting  for your visit</h3>
                             <div class="footer_map1">
                                 <img src="../assets/icons/pin.png" alt="map1" class="footer_Boston"> 
-                                <a href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+USA/@42.3585519,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263" class="footer_link">1 Central Street, Boston (entrance from the store)</a>
+                                <a target="_blank" href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+USA/@42.3585519,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263" class="footer_link">1 Central Street, Boston (entrance from the store)</a>
                             </div>
                             <div class="footer_map2">
                                 <img src="../assets/icons/pin.png" alt="map2" class="footer_London"> 
-                                <a href="https://www.google.com/maps/place/18+S+Park+Cres,+London+SE6+1JW,+UK/@51.4424531,0.0036272,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424531!4d0.0058159" class="footer_link">18 South Park, London</a>
+                                <a target="_blank" href="https://www.google.com/maps/place/18+S+Park+Cres,+London+SE6+1JW,+UK/@51.4424531,0.0036272,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424531!4d0.0058159" class="footer_link">18 South Park, London</a>
                             </div>                   
                         </div>
                         <div class="footer_column3">
@@ -224,5 +236,6 @@
                 </div>     
             </footer>    
         </div> 
+        <script src="script.js"></script>
     </body>
 </html>
