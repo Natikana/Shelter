@@ -928,7 +928,7 @@ h5 {
         justify-content: flex-end; 
     } 
     .not_only_img img {
-        max-width: 84.31%;
+        max-width: 80.31%;
     }
     .about_container {
         min-height: 1048px;
@@ -1021,10 +1021,6 @@ h5 {
     }
     .footer_link {
         letter-spacing: -0.0000em;
-    }
-    .footer_column2 {
-        flex: 0 0 46%;
-        margin-right: 0px;
     }
     .footer_image {
         padding: 0;
