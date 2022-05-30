@@ -1068,7 +1068,7 @@ h5 {
 }    
 @media (max-width: 375px) {
     [class*="_container"] {
-        max-width: none;
+        max-width: 375px;
     }
     body.noscroll {
         overflow: hidden;
@@ -1391,7 +1391,7 @@ h5 {
     .about_descrb1, .about_descrb2 {
         margin-top: 25px;
         text-align: justify;
-        letter-spacing: 0.03em;
+        letter-spacing: -0.006em;
         line-height: 171%;
     }
     .about_descrb2 {
@@ -1440,17 +1440,17 @@ h5 {
         min-height: 745px;
     }
     .help_wrapper {
-        padding: 42px 5px 42px 5px;
+        padding: 34px 14px 42px 38px;
     }
     .help_row {
-        gap: 18px;
+        gap: 28px;
         justify-content: space-between; 
     }
     h4 {
         font-size: 15px;
     }
     .help_img1 {
-        max-width: 85%;
+        max-width: 89%;
     }
     .help_img_descrb {
         margin-top: 20px;
@@ -1476,20 +1476,21 @@ h5 {
         text-align: justify;
         letter-spacing: 0.012em;
         line-height: 153%;
+        padding: 0 10px;
     }     
     .in_addition_btn {
         width: 281px;
         height: 43px;
         font-size: 15px;
         letter-spacing: 0.06em;
-        margin-top: 22px;
+        margin-top: 24px;
         padding: 10px 12px;
     } 
     .in_addition_img {
         padding: 41px 0px 0px 0;
     } 
     .in_addition_image {
-        max-width: 92%;
+        max-width: 87%;
     }
     .footer_container {
         min-height: 809px;
@@ -1510,6 +1511,7 @@ h5 {
     .footer_title {
         padding: 0;
         text-align: center;
+        letter-spacing: 0.06em;
     }
     .footer_link {
         letter-spacing: 0.05em;
