@@ -56,7 +56,7 @@ h5 {
     color: #545454;
 }
 .wrapper {
-    overflow-y: hidden;
+    overflow-x: hidden;
     min-height: 100%;
     flex-direction: column;
     display: flex;
