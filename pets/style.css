@@ -12,6 +12,7 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
 }
 body {
@@ -606,8 +607,97 @@ h4 {
     .footer_img  {
         max-width: 100%;
     } 
-    
 }
+@media (max-width: 767px) {
+    [class*="_container"] {
+        max-width: 767px;
+        padding: 0 30px;
+    }
+    body.noscroll {
+        overflow: hidden;
+    }
+    .popup {
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        background-color: #F6F6F6;
+        height: 100vh;
+        width: 320px;
+        transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        overflow-y: hidden;
+    }
+    .popup.open {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    .pets_block {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .popup .pets_logo1 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 10px;
+    }
+    .logo_subtitle {
+        letter-spacing: 0.12em;
+    }
+    .burger {
+        display: block;
+        z-index: 100;
+    }
+    .burger_field {
+        display: block;
+        z-index: 100;
+        margin-left: 41px;
+        width: 30px;
+        height: 30px
+    } 
+    .burger_field .line {
+        width: 30px;
+        height: 2px;
+        background-color: #000000;
+        display: block;
+        margin: 8px auto;
+        transition: 2s;
+    }
+    .burger.active .line {
+        margin-left: 10px;
+        transform: rotateZ(-360deg);
+        width: 2px;
+        height: 30px;
+    }
+    .burger.active .line:first-child {
+        margin-left: 0;
+    }
+    .burger.active .burger_field {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu {
+        display: none;
+    }
+    .popup .menu_list {
+        padding-top: 158px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        margin: 0;
+    }
+    .popup .menu_link {
+        font-size: 32px;
+        line-height: 160%;
+    }
+}    
 @media (max-width: 600px) {
     [class*="_container"] {
         max-width: 600px;
@@ -657,9 +747,6 @@ h4 {
         max-width: 480px;
         padding: 0 10px;
     }
-    /* .logo_subtitle, h1 {
-        text-align: center;
-    } */
     .menu_list480 {
         margin-left: 0;
         gap: 0px;
@@ -684,9 +771,6 @@ h4 {
         margin-top: 27px;
         letter-spacing: 0.05em;
     }
-    /* .our_pets_btn {
-        margin: 30px 0;
-    } */
     .our_pets_row .hidden320 {
         display: none;
     }
@@ -728,83 +812,6 @@ h4 {
     [class*="_container"] {
         max-width: 375px;
         padding: 0 10px;
-    }
-    body.noscroll {
-        overflow: hidden;
-    }
-    .popup {
-        display: block;
-        top: 0;
-        background-color: #F6F6F6;
-        right: -320px;
-        height: 100vh;
-        width: 320px;
-        transition: 3s;
-        position: absolute;
-    }
-    .popup.open {
-        right: 0;
-    }
-    .pets_block {
-        padding: 30px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        z-index: 100;
-    }
-    .pets_logo {
-        z-index: 100;
-    }
-    .logo_subtitle {
-        letter-spacing: 0.12em;
-    }
-    .burger {
-        display: block;
-    }
-    .burger_field {
-        display: block;
-        z-index: 100;
-        margin-left: 41px;
-        width: 30px;
-        height: 30px
-    } 
-    .burger_field .line {
-        width: 30px;
-        height: 2px;
-        background-color: #000000;
-        display: block;
-        margin: 8px auto;
-        transition: 2s;
-    }
-    .burger.active .line {
-        margin-left: 10px;
-        transform: rotateZ(-360deg);
-        width: 2px;
-        height: 30px;
-    }
-    .burger.active .line:first-child {
-        margin-left: 0;
-    }
-    .burger.active .burger_field {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .menu {
-        display: none;
-    }
-    .menu_list {
-        padding-top: 158px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: 40px;
-    }
-    .menu_link {
-        font-size: 32px;
-        line-height: 160%;
     }
     .our_pets_main {
         min-height: 1649px;
